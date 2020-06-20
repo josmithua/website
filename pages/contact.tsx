@@ -11,6 +11,7 @@ const Contact: React.FC = () => {
             method="post"
             data-netlify="true"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2" htmlFor="email">
                 Email
