@@ -1,9 +1,10 @@
 import Head from 'next/head';
+import Layout from '../components/Layout';
 
-export function AnimatedLogo(props: { size: number }) {
+export function AnimatedLogo() {
   return (
     <>
-      <div className="flex justify-center items-center text-6xl">
+      <div className="flex justify-center items-center text-5xl">
         <div className="flex">
           <div className="jos">
             <code>jos</code>
@@ -83,14 +84,13 @@ export function AnimatedLogo(props: { size: number }) {
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <Head>
-        <title>Joshua Smith</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Home</title>
       </Head>
-      <div className="flex h-screen justify-center items-center">
-        <AnimatedLogo size={3} />
+      <div className="flex h-screen w-screen justify-center items-center">
+        <AnimatedLogo />
       </div>
-    </>
+    </Layout>
   );
 }
