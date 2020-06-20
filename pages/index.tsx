@@ -4,18 +4,10 @@ import Layout from '../components/Layout';
 export function AnimatedLogo() {
   return (
     <>
-      <div className="flex justify-center items-center text-5xl">
-        <div className="flex">
-          <div className="jos">
-            <code>jos</code>
-          </div>
-          <div className="smith">
-            <code>smith</code>
-          </div>
-          <div className="hua">
-            <code>hua</code>
-          </div>
-        </div>
+      <div className="flex justify-center items-center text-5xl h-32">
+        <span className="inline-block jos font-mono">jos</span>
+        <span className="inline-block smith font-mono">smith</span>
+        <span className="inline-block hua font-mono">hua</span>
       </div>
       <style jsx>{`
         @keyframes smithDown {
