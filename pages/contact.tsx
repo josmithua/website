@@ -1,8 +1,12 @@
 import Layout from '../components/Layout';
+import Head from 'next/head';
 
 const Contact: React.FC = () => {
   return (
     <Layout>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <div className="flex justify-center items-center h-screen">
         <div className="w-full max-w-md justify-center h-10/12">
           <form

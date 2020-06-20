@@ -19,6 +19,7 @@ export function AnimatedLogo() {
       </div>
       <style jsx>{`
         @keyframes smithDown {
+          0%,
           30% {
             transform: translate3d(0, 0, 0);
           }
@@ -48,6 +49,7 @@ export function AnimatedLogo() {
         }
 
         @keyframes huaLeft {
+          0%,
           30% {
             transform: translate3d(-1ch, 0, 0);
           }
