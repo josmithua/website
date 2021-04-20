@@ -8,7 +8,7 @@ type Props = React.PropsWithChildren<{ home?: boolean }>;
 
 export default function Layout({ children, home = false }: Props) {
   return (
-    <div>
+    <div className="bg-white dark:bg-black">
       <Head>
         <meta name="description" content={siteDescription} />
         <meta name="og:title" content={siteTitle} />
@@ -21,9 +21,10 @@ export default function Layout({ children, home = false }: Props) {
 }
 
 function BottomNav() {
-  const linkClasses = 'flex flex-1 py-2 px-2 justify-center md:p-4 md:text-xl';
+  const linkClasses =
+    'border-2 border-black dark:border-white flex flex-1 p-2 justify-center md:p-4 md:text-xl m-2';
   return (
-    <div className="bg-black text-white fixed overflow-hidden bottom-0 w-full flex justify-around divide-x divide-white">
+    <div className="text-black dark:text-white fixed overflow-hidden bottom-0 w-full flex justify-around">
       <Link href="/">
         <a className={linkClasses}>Home</a>
       </Link>
