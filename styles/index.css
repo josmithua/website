@@ -1,7 +1,0 @@
-/* purgecss start ignore */
-@tailwind base;
-/* Write custom CSS below this line */
-/* Write custom CSS above this line */
-@tailwind components;
-/* purgecss end ignore */
-@tailwind utilities;

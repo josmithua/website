@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Head from 'next/head';
 
-const Contact: React.FC = () => {
+function Contact() {
   return (
     <Layout>
       <Head>
@@ -9,12 +9,7 @@ const Contact: React.FC = () => {
       </Head>
       <div className="flex justify-center items-center h-screen">
         <div className="w-full max-w-md justify-center h-10/12">
-          <form
-            className="shadow-md rounded p-6"
-            name="contact"
-            method="post"
-            data-netlify="true"
-          >
+          <form className="shadow-md rounded p-6" name="contact" method="post" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className="mb-4">
               <label className="block text-sm font-bold mb-2" htmlFor="email">
@@ -50,6 +45,6 @@ const Contact: React.FC = () => {
       </div>
     </Layout>
   );
-};
+}
 
 export default Contact;

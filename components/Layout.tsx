@@ -4,10 +4,9 @@ import Link from 'next/link';
 const siteTitle = 'Joshua Smith';
 const siteDescription = 'Personal website of Joshua Smith';
 
-const Layout: React.FC<{ children: React.ReactNode; home?: boolean }> = ({
-  children,
-  home = false,
-}) => {
+type Props = React.PropsWithChildren<{ home?: boolean }>;
+
+export default function Layout({ children, home = false }: Props) {
   return (
     <div>
       <Head>
@@ -19,9 +18,9 @@ const Layout: React.FC<{ children: React.ReactNode; home?: boolean }> = ({
       <BottomNav />
     </div>
   );
-};
+}
 
-const BottomNav: React.FC = () => {
+function BottomNav() {
   const linkClasses = 'flex flex-1 py-2 px-2 justify-center md:p-4 md:text-xl';
   return (
     <div className="bg-black text-white fixed overflow-hidden bottom-0 w-full flex justify-around divide-x divide-white">
@@ -33,6 +32,4 @@ const BottomNav: React.FC = () => {
       </Link>
     </div>
   );
-};
-
-export default Layout;
+}
