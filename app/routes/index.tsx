@@ -1,6 +1,6 @@
 import AnimatedJosmithua, {
   links as josmithuaLinks,
-} from "~/components/AnimatedJosmithua";
+} from '~/components/AnimatedJosmithua';
 
 export function links() {
   return [...josmithuaLinks()];
@@ -70,9 +70,12 @@ export default function Index() {
             </a>
           </div>
           <div className="flex items-center">
-            <span className="text-2xl mr-2">📧</span>
-            <a href="/contact" className="underline underline-offset-1">
-              Email
+            <span className="text-2xl mr-2">🐦</span>
+            <a
+              href="https://twitter.com/josmithua"
+              className="underline underline-offset-1"
+            >
+              Twitter
             </a>
           </div>
         </div>
