@@ -5,17 +5,19 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "remix";
-import type { MetaFunction } from "remix";
-import styles from "./tailwind.css";
+} from 'remix';
+import type { MetaFunction } from 'remix';
+import styles from './tailwind.css';
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [{ rel: 'stylesheet', href: styles }];
 }
 
-export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
-};
+export const meta: MetaFunction = () => ({
+  charset: 'utf-8',
+  title: 'josmithua.dev',
+  viewport: 'width=device-width,initial-scale=1',
+});
 
 export default function App() {
   return (
@@ -30,7 +32,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === "development" && <LiveReload />}
+        <LiveReload />
       </body>
     </html>
   );
