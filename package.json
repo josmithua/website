@@ -5,12 +5,12 @@
   "license": "",
   "sideEffects": false,
   "scripts": {
-    "build": "pnpm run build:css && remix build",
+    "build": "npm run build:css && remix build",
     "build:css": "tailwindcss -o ./app/tailwind.css",
-    "dev": "concurrently \"pnpm run dev:css\" \"cross-env NODE_ENV=development netlify dev\"",
+    "dev": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=development netlify dev\"",
     "dev:css": "tailwindcss -o ./app/tailwind.css --watch",
     "postinstall": "remix setup node",
-    "start": "concurrently \"pnpm run dev:css\" \"cross-env NODE_ENV=production netlify dev\""
+    "start": "concurrently \"npm run dev:css\" \"cross-env NODE_ENV=production netlify dev\""
   },
   "dependencies": {
     "@netlify/functions": "^0.10.0",
