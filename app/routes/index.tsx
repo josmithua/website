@@ -8,74 +8,84 @@ export function links() {
 
 export default function Index() {
   return (
-    <div className="flex flex-col text-white h-screen">
-      <div className="bg-black flex-grow p-4 flex flex-col justify-around items-center md:px-48">
+    <div className="flex flex-col text-white h-screen min-h-screen bg-red-200">
+      <div className="bg-[#0B1320] p-4 flex flex-col justify-evenly items-center flex-grow">
         <img src="/me.jpeg" alt="Head shot" width="240" className="rounded" />
-        <div className="text-3xl mt-1 flex flex-col items-center sm:block">
-          <span>👋 Hi, I'm</span> <AnimatedJosmithua />.
+        <div className="text-3xl my-4 flex flex-col items-center sm:block">
+          <span>👋 Hi, I'm</span> <AnimatedJosmithua />
         </div>
-        <p className="text-justify text-lg">
+        <p className="text-justify text-2xl md:w-3/4">
           I'm a software developer and I love to delete code. My passion and
           goal is to help people be healthier, happier, and more efficient by
           designing simple software solutions.
         </p>
       </div>
-      <div className="bg-black/95 h-2/6 p-4 flex flex-col justify-evenly md:px-48">
-        <h2 className="text-xl">A few of my (public) projects:</h2>
-        <div className="flex justify-evenly flex-col lg:flex-row">
-          <div className="p-1">
-            <a
-              href="https://sing.joshuasmith.ca"
-              className="underline underline-offset-1"
-            >
-              sing.joshuasmith.ca
-            </a>
-            <div className="text-sm">
-              Fulfilling a need for a portable song book for spontaneous
-              sing-songs
+      <div className="bg-[#1d3850] p-4 flex flex-col justify-evenly items-center flex-grow">
+        <div className="md:w-3/4 flex flex-col gap-4">
+          <h2 className="text-xl">A few of my (public) projects:</h2>
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 text-lg">
+            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
+              <a
+                href="https://sing.joshuasmith.ca"
+                className="underline underline-offset-1 font-semibold"
+              >
+                sing.joshuasmith.ca
+              </a>
+              <div className="leading-6 mt-1">
+                Fulfilling a need for a portable song book for spontaneous
+                sing-songs
+              </div>
             </div>
-          </div>
-          <div className="p-1">
-            <a
-              href="https://mha.joshuasmith.ca"
-              className="underline underline-offset-1"
-            >
-              mha.joshuasmith.ca
-            </a>
-            <div className="text-sm">
-              Simple directory of YouTube lyric videos that our church uses for
-              worship. Editable via a CMS
+            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
+              <a
+                href="https://mha.joshuasmith.ca"
+                className="underline underline-offset-1 font-semibold"
+              >
+                mha.joshuasmith.ca
+              </a>
+              <div className="leading-6 mt-1">
+                Simple directory of YouTube lyric videos that our church uses
+                for worship. Editable via a CMS.
+              </div>
             </div>
-          </div>
-          <div className="p-1">
-            <a
-              href="https://github.com/stashenergy/react-native-msal"
-              className="underline underline-offset-1"
-            >
-              react-native-msal
-            </a>
-            <div className="text-sm">React Native wrapper for MSAL</div>
+            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
+              <a
+                href="https://github.com/stashenergy/react-native-msal"
+                className="underline underline-offset-1 font-semibold"
+              >
+                react-native-msal
+              </a>
+              <div className="leading-6 mt-1">
+                React Native wrapper for MSAL
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="bg-black/90 p-3 flex flex-col justify-evenly md:px-48">
+      <div className="bg-[#152537] p-4 flex flex-col justify-evenly">
         <div className="flex justify-evenly">
-          <div className="flex items-center">
-            <span className="text-2xl mr-2">👨‍💻</span>
+          <div className="flex items-center gap-2">
             <a
               href="https://github.com/josmithua"
-              className="underline underline-offset-1"
+              aria-label="Link to my twitter profile"
             >
-              GitHub
+              <img
+                src="/github_icon.svg"
+                alt="Twitter logo"
+                className="w-7 h-7"
+              />
             </a>
           </div>
-          <div className="flex items-center">
-            <span className="text-2xl mr-2">🐦</span>
+          <div className="flex items-center gap-2">
             <a
               href="https://twitter.com/josmithua"
-              className="underline underline-offset-1"
+              aria-label="Link to my twitter profile"
             >
-              Twitter
+              <img
+                src="/twitter_icon.svg"
+                alt="Twitter logo"
+                className="w-7 h-7"
+              />
             </a>
           </div>
         </div>
