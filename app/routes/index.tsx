@@ -7,8 +7,11 @@ export function links() {
 }
 
 export default function Index() {
+  const cnProjectDiv = 'flex-1 p-4 rounded-xl bg-[#2d536e]';
+  const cnProjectLink = 'underline underline-offset-1 font-semibold';
+  const cnProjectDescriptionDiv = 'leading-6 mt-1';
   return (
-    <div className="flex flex-col text-white h-screen min-h-screen bg-red-200">
+    <div className="flex flex-col text-white h-screen min-h-screen">
       <div className="bg-[#0B1320] p-4 flex flex-col justify-evenly items-center flex-grow">
         <img src="/me.jpeg" alt="Head shot" width="240" className="rounded" />
         <div className="text-3xl my-4 flex flex-col items-center sm:block">
@@ -23,40 +26,45 @@ export default function Index() {
       <div className="bg-[#1d3850] p-4 flex flex-col justify-evenly items-center flex-grow">
         <div className="md:w-3/4 flex flex-col gap-4">
           <h2 className="text-xl">A few of my (public) projects:</h2>
-          <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 text-lg">
-            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 text-lg">
+            <div className={cnProjectDiv}>
               <a
-                href="https://sing.joshuasmith.ca"
-                className="underline underline-offset-1 font-semibold"
+                href="https://raycast.com/josmithua/bible"
+                className={cnProjectLink}
               >
+                Bible Raycast Extension
+              </a>
+              <div className={cnProjectDescriptionDiv}>
+                A extension to search for and display Bible passages in Raycast
+              </div>
+            </div>
+            <div className={cnProjectDiv}>
+              <a
+                href="https://github.com/stashenergy/react-native-msal"
+                className={cnProjectLink}
+              >
+                react-native-msal
+              </a>
+              <div className={cnProjectDescriptionDiv}>
+                React Native wrapper for MSAL
+              </div>
+            </div>
+            <div className={cnProjectDiv}>
+              <a href="https://sing.joshuasmith.ca" className={cnProjectLink}>
                 sing.joshuasmith.ca
               </a>
-              <div className="leading-6 mt-1">
+              <div className={cnProjectDescriptionDiv}>
                 Fulfilling a need for a portable song book for spontaneous
                 sing-songs
               </div>
             </div>
-            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
-              <a
-                href="https://mha.joshuasmith.ca"
-                className="underline underline-offset-1 font-semibold"
-              >
+            <div className={cnProjectDiv}>
+              <a href="https://mha.joshuasmith.ca" className={cnProjectLink}>
                 mha.joshuasmith.ca
               </a>
-              <div className="leading-6 mt-1">
+              <div className={cnProjectDescriptionDiv}>
                 Simple directory of YouTube lyric videos that our church uses
                 for worship. Editable via a CMS.
-              </div>
-            </div>
-            <div className="flex-1 p-4 rounded-xl bg-[#2d536e]">
-              <a
-                href="https://github.com/stashenergy/react-native-msal"
-                className="underline underline-offset-1 font-semibold"
-              >
-                react-native-msal
-              </a>
-              <div className="leading-6 mt-1">
-                React Native wrapper for MSAL
               </div>
             </div>
           </div>
