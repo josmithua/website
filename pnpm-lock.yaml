@@ -5,6 +5,7 @@ specifiers:
   '@remix-run/dev': ^1.4.1
   '@remix-run/eslint-config': ^1.4.1
   '@remix-run/netlify': ^1.4.1
+  '@remix-run/node': ^1.4.1
   '@remix-run/react': ^1.4.1
   '@types/react': ^17.0.44
   '@types/react-dom': ^17.0.15
@@ -13,18 +14,17 @@ specifiers:
   eslint: ^8.14.0
   react: ^17.0.2
   react-dom: ^17.0.2
-  remix: ^1.4.1
   tailwindcss: ^3.0.24
   typescript: ^4.6.3
 
 dependencies:
   '@netlify/functions': 0.10.0
   '@remix-run/netlify': 1.4.1_1d1ce03cfafdba27bba741ad8440c333
+  '@remix-run/node': 1.4.1_react-dom@17.0.2+react@17.0.2
   '@remix-run/react': 1.4.1_react-dom@17.0.2+react@17.0.2
   cross-env: 7.0.3
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  remix: 1.4.1
 
 devDependencies:
   '@remix-run/dev': 1.4.1_react-dom@17.0.2+react@17.0.2
@@ -5473,10 +5473,6 @@ packages:
       mdast-util-to-hast: 11.3.0
       unified: 10.1.2
     dev: true
-
-  /remix/1.4.1:
-    resolution: {integrity: sha512-lv8wqwGVYtFvplc5B9pQH0C17cO/MFrDFNbvaMQ3rDeguu+YYlQvVsDVw2NzXB8ZA6Ad7JxYRT341ADI+LuBCQ==}
-    dev: false
 
   /repeat-element/1.1.4:
     resolution: {integrity: sha512-LFiNfRcSu7KK3evMyYOuCzv3L10TW7yC1G2/+StMjK8Y6Vqd2MG7r/Qjw4ghtuCOjFvlnms/iMmLqpvW/ES/WQ==}

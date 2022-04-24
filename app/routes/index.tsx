@@ -1,3 +1,4 @@
+import { MetaFunction } from '@remix-run/node';
 import AnimatedJosmithua, {
   links as josmithuaLinks,
 } from '~/components/AnimatedJosmithua';
@@ -6,14 +7,28 @@ export function links() {
   return [...josmithuaLinks()];
 }
 
+export const meta: MetaFunction = () => {
+  return {
+    title: 'josmithua.dev',
+    description:
+      "I'm a software developer and I love to delete code. My passion and goal is to help people be healthier, happier, and more efficient by designing simple software solutions.",
+  };
+};
+
 export default function Index() {
-  const cnProjectDiv = 'flex-1 p-4 rounded-xl bg-[#2d536e]';
+  const cnProjectDiv = 'flex-1 p-4 rounded-lg bg-[#2d536e]';
   const cnProjectLink = 'underline underline-offset-1 font-semibold';
   const cnProjectDescriptionDiv = 'leading-6 mt-1';
   return (
     <div className="flex flex-col text-white h-screen min-h-screen">
       <div className="bg-[#0B1320] p-4 flex flex-col justify-evenly items-center flex-grow">
-        <img src="/me.jpeg" alt="Head shot" width="240" className="rounded" />
+        <img
+          src="/me.webp"
+          alt="Head shot of yours truly"
+          width={240}
+          height={240}
+          className="rounded-lg"
+        />
         <div className="text-3xl my-4 flex flex-col items-center sm:block">
           <span>👋 Hi, I'm</span> <AnimatedJosmithua />
         </div>
